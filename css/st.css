@@ -143,7 +143,6 @@ body {
 /* disable mobile-menu-modal */
 @media screen and (max-width: 767px) {
   .header {
-    width: 320px;
     margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -287,7 +286,6 @@ body {
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     background: var(--white);
-    width: 768px;
     margin: 0 auto;
   }
   .container__header {
@@ -362,10 +360,7 @@ body {
 }
 /* desktop */
 @media screen and (min-width: 1158px) {
-  .header {
-    width: 1158px;
-  }
-  .nav__logo {
+   .nav__logo {
     margin-right: 76px;
   }
 
@@ -393,7 +388,6 @@ body {
 /* mob */
 @media screen {
   .hero {
-    min-height: 432px;
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(
@@ -970,6 +964,7 @@ body {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
   }
   .is-open {
     opacity: 1;
@@ -988,10 +983,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -66%);
+    transform: translate(-50%, -50%);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
   }
 
   .modal-close-button {
